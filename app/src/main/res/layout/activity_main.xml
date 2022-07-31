@@ -6,12 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
 
-        android:src="@mipmap/ic_test_1_foreground"
+        android:src="@mipmap/ic_test_foreground"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,18 +22,30 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnImageChange"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="180dp"
         android:onClick="changeImage"
         android:text="CHANGE!"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/btnSetWallpaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setWallpaper"
+        android:text="Apply!"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageChange" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
